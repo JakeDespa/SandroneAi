@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandrone AI - The Marionette</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 {{ sandrone_name }}</h1>
+                <p class="subtitle">The Marionette - 7th Fatui Harbinger</p>
+                <div class="status-indicator">
+                    <span class="status-dot {% if ollama_status %}status-online{% else %}status-offline{% endif %}"></span>
+                    <span class="status-text">
+                        {% if ollama_status %}
+                            Ollama Connected
+                        {% else %}
+                            Ollama Offline - Please start Ollama
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant-message">
+                    <div class="message-content">
+                        <strong>Sandrone:</strong>
+                        <p>Hmph. Another visitor to waste my time. State your business.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <form id="chatForm" class="chat-form">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="Ask Sandrone anything..."
+                        autocomplete="off"
+                        {% if not ollama_status %}disabled{% endif %}
+                    >
+                    <button 
+                        type="submit" 
+                        class="send-button"
+                        {% if not ollama_status %}disabled{% endif %}
+                    >
+                        Send
+                    </button>
+                </form>
+                <button id="resetButton" class="reset-button">Reset Conversation</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
