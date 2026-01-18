@@ -17,8 +17,9 @@ class Config:
     OLLAMA_BASE_URL = os.getenv('OLLAMA_BASE_URL', 'http://localhost:11434')
     
     # Model settings - use an uncensored model for best results
-    # Recommended models: 'dolphin-mixtral', 'nous-hermes-2', 'wizard-vicuna-uncensored'
-    MODEL_NAME = os.getenv('MODEL_NAME', 'dolphin-mixtral:latest')
+    # Recommended models for 16GB RAM: 'nous-hermes-2', 'wizard-vicuna-uncensored', 'dolphin-phi'
+    # For 32GB+ RAM: 'dolphin-mixtral'
+    MODEL_NAME = os.getenv('MODEL_NAME', 'nous-hermes-2:latest')
     
     # Generation parameters
     TEMPERATURE = 0.8  # Higher = more creative, lower = more focused

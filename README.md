@@ -28,14 +28,17 @@ Download and install Ollama from [https://ollama.ai/](https://ollama.ai/)
 Open a terminal and run one of these commands to download an uncensored model:
 
 ```powershell
-# Recommended: Dolphin Mixtral (highly intelligent and uncensored)
-ollama pull dolphin-mixtral
-
-# Alternative: Nous Hermes 2 (excellent for roleplay)
+# Recommended: Nous Hermes 2 (excellent for roleplay, works great on 16GB RAM)
 ollama pull nous-hermes-2
 
-# Alternative: Wizard Vicuna Uncensored (lighter weight)
+# Alternative: Wizard Vicuna Uncensored (lighter weight, faster)
 ollama pull wizard-vicuna-uncensored
+
+# Alternative: Dolphin Phi (very light, good for lower-end systems)
+ollama pull dolphin-phi
+
+# For 32GB+ RAM systems: Dolphin Mixtral (most intelligent)
+ollama pull dolphin-mixtral
 ```
 
 ### Step 3: Install Python Dependencies
@@ -46,7 +49,7 @@ pip install -r requirements.txt
 
 ### Step 4: Configure the Model (Optional)
 
-Edit `config.py` to change the model if you downloaded a different one:
+Edit `config.pnous-hermes-2e model if you downloaded a different one:
 
 ```python
 MODEL_NAME = 'dolphin-mixtral:latest'  # Change to your preferred model
@@ -88,7 +91,7 @@ Edit `config.py` to customize:
 
 ```python
 # Model settings
-MODEL_NAME = 'dolphin-mixtral:latest'  # Change model
+MODEL_NAME = 'nous-hermes-2:latest'  # Change model (current: 16GB RAM optimized)
 TEMPERATURE = 0.8  # 0.0 = focused, 1.0 = creative
 MAX_TOKENS = 1024  # Maximum response length
 
@@ -100,23 +103,31 @@ DEBUG = True
 
 ## 🔧 Recommended Models
 
-### Best Overall: Dolphin Mixtral
-- **Model**: `dolphin-mixtral`
-- **Size**: ~26GB
-- **Pros**: Highly intelligent, completely uncensored, excellent reasoning
-- **Recommended RAM**: 32GB+
-
-### Best for Roleplay: Nous Hermes 2
+### Best for 16GB RAM: Nous Hermes 2 (Default)
 - **Model**: `nous-hermes-2`
 - **Size**: ~7GB
-- **Pros**: Great for character roleplay, creative responses
-- **Recommended RAM**: 16GB+
+- **Pros**: Great for character roleplay, creative responses, uncensored
+- **Recommended RAM**: 16GB
+- **Status**: ✅ Default configuration
 
 ### Lightweight Option: Wizard Vicuna
 - **Model**: `wizard-vicuna-uncensored`
 - **Size**: ~4GB
-- **Pros**: Fast, works on modest hardware
+- **Pros**: Fast, works on modest hardware, good quality
 - **Recommended RAM**: 8GB+
+
+### Very Light: Dolphin Phi
+- **Model**: `dolphin-phi`
+- **Size**: ~3GB
+- **Pros**: Very fast, uncensored, works on low-end systems
+- **Recommended RAM**: 8GB
+
+### Best for 32GB+ RAM: Dolphin Mixtral
+- **Model**: `dolphin-mixtral`
+- **Size**: ~26GB
+- **Pros**: Highly intelligent, completely uncensored, excellent reasoning
+- **Recommended RAM**: 32GB+
+- **Note**: Requires model change in config.py
 
 ## 📁 Project Structure
 
