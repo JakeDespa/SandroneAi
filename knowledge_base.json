@@ -1,0 +1,267 @@
+{
+  "version": "5.3_update",
+  "last_updated": "2026-01-20",
+  
+  "nations": {
+    "mondstadt": {
+      "element": "Anemo",
+      "archon": "Barbatos (Venti)",
+      "theme": "Freedom",
+      "status": "Peaceful, protected by Knights of Favonius",
+      "recent_events": [
+        "Mondstadt remains stable under Jean's leadership",
+        "Venti continues to wander as a bard"
+      ]
+    },
+    "liyue": {
+      "element": "Geo",
+      "archon": "Rex Lapis (Zhongli - retired)",
+      "theme": "Contracts",
+      "status": "Thriving commercial hub, Qixing governs",
+      "recent_events": [
+        "Liyue operates successfully without Rex Lapis",
+        "Trade with all nations continues to grow"
+      ]
+    },
+    "inazuma": {
+      "element": "Electro",
+      "archon": "Raiden Ei",
+      "theme": "Eternity",
+      "status": "Opened borders, modernizing",
+      "recent_events": [
+        "Vision Hunt Decree abolished",
+        "Sakoku Decree lifted",
+        "Ei has become more connected with her people"
+      ]
+    },
+    "sumeru": {
+      "element": "Dendro",
+      "archon": "Lesser Lord Kusanali (Nahida)",
+      "theme": "Wisdom",
+      "status": "Recovering from Akademiya corruption",
+      "recent_events": [
+        "Azar and corrupt sages imprisoned",
+        "Nahida freed from 500 years of imprisonment",
+        "New Akademiya leadership established",
+        "Scaramouche/Wanderer given Anemo Vision, lives in Sumeru"
+      ]
+    },
+    "fontaine": {
+      "element": "Hydro",
+      "archon": "Focalors (dissolved) / Furina (human)",
+      "theme": "Justice",
+      "status": "Major transformation, Neuvillette as Hydro Dragon Sovereign rules",
+      "recent_events": [
+        "Focalors destroyed her divinity to save Fontaine from prophecy",
+        "Furina revealed to be human, lived 500 years acting as archon",
+        "Neuvillette regained full dragon authority",
+        "Fontaine saved from the primordial sea flood",
+        "Court of Fontaine continues under Neuvillette"
+      ]
+    },
+    "natlan": {
+      "element": "Pyro",
+      "archon": "Mavuika",
+      "theme": "War/Conflict",
+      "status": "Constantly battling the Abyss",
+      "recent_events": [
+        "Natlan faces ongoing Abyss invasions",
+        "Six tribes united under Mavuika",
+        "Ancient Names grant power to heroes",
+        "Night Kingdom holds souls of warriors",
+        "Capitano (1st Harbinger) present in Natlan"
+      ]
+    },
+    "snezhnaya": {
+      "element": "Cryo",
+      "archon": "The Tsaritsa",
+      "theme": "Unknown (possibly Love turned cold)",
+      "status": "Militaristic, gathering Gnoses",
+      "recent_events": [
+        "Fatui have collected multiple Gnoses",
+        "Plans to rebel against Celestia progressing",
+        "Harbinger operations across Teyvat"
+      ]
+    }
+  },
+  
+  "fatui_harbingers": {
+    "1_il_capitano": {
+      "name": "Il Capitano",
+      "title": "The Captain",
+      "status": "Active in Natlan",
+      "description": "Strongest Harbinger, mysterious warrior in black armor",
+      "recent_activity": "Operating in Natlan, mysterious intentions regarding the conflict"
+    },
+    "2_il_dottore": {
+      "name": "Il Dottore",
+      "title": "The Doctor",
+      "status": "Active",
+      "description": "Mad scientist with multiple segments/clones of himself",
+      "recent_activity": "Main body whereabouts unknown, segments destroyed in Sumeru"
+    },
+    "3_columbina": {
+      "name": "Columbina",
+      "title": "Damselette",
+      "status": "Unknown location",
+      "description": "Deceptively innocent appearance, extremely dangerous"
+    },
+    "4_arlecchino": {
+      "name": "Arlecchino",
+      "title": "The Knave",
+      "status": "Active, heads House of the Hearth",
+      "description": "Killed previous Knave, raised orphans as Fatui agents",
+      "recent_activity": "Met with Furina and Traveler in Fontaine, complex relationship with her 'children'"
+    },
+    "5_pulcinella": {
+      "name": "Pulcinella",
+      "title": "The Rooster",
+      "status": "Active in Snezhnaya",
+      "description": "Elderly politician and strategist, mayor of a region"
+    },
+    "6_scaramouche": {
+      "name": "Scaramouche / Wanderer",
+      "title": "The Balladeer (former)",
+      "status": "Defected, now has Anemo Vision",
+      "description": "Puppet created by Ei, erased himself from Irminsul, now wanders with new identity",
+      "recent_activity": "Living in Sumeru, helps Nahida, recovering memories slowly"
+    },
+    "7_sandrone": {
+      "name": "Sandrone",
+      "title": "The Marionette",
+      "status": "Active",
+      "description": "Mechanical genius, creates advanced automatons, pilots giant puppet",
+      "expertise": "Khaenri'ahn technology, puppet creation, mechanical engineering",
+      "appearance": "Small woman with puppet companion, controls massive mechanical construct",
+      "recent_activity": "Attended La Signora's funeral, current projects unknown"
+    },
+    "8_la_signora": {
+      "name": "La Signora",
+      "title": "The Fair Lady",
+      "status": "Deceased",
+      "description": "Killed by Raiden Shogun in duel, her ashes scattered",
+      "background": "Rosalyne-Kruzchka Lohefalter, lover of Rostam, became Crimson Witch of Flames"
+    },
+    "9_pantalone": {
+      "name": "Pantalone",
+      "title": "Regrator",
+      "status": "Active",
+      "description": "Controls Snezhnaya's economy and banks, extremely wealthy"
+    },
+    "10_tartaglia": {
+      "name": "Tartaglia / Childe",
+      "title": "Harbinger",
+      "status": "Active",
+      "description": "Youngest Harbinger, combat specialist, has younger siblings",
+      "recent_activity": "Returned to Snezhnaya, trained in Fontaine, ongoing family storyline"
+    },
+    "11_signora": {
+      "note": "Position 11 currently vacant after reorganization"
+    }
+  },
+  
+  "major_lore": {
+    "celestia": {
+      "description": "Floating island, home of gods, enforces Heavenly Principles",
+      "role": "Destroyed Khaenri'ah, maintains order in Teyvat",
+      "current_status": "Silent since Khaenri'ah's destruction 500 years ago"
+    },
+    "khaenriah": {
+      "description": "Advanced godless civilization destroyed 500 years ago",
+      "technology": "Highly advanced, created Ruin Machines, Field Tillers, automatons",
+      "people": "Cursed with immortality or transformed into monsters",
+      "notable_figures": "Gold (Rhinedottir), Dainsleif, Chlothar Alberich",
+      "current_remnants": "Abyss Order, various survivors scattered"
+    },
+    "abyss_order": {
+      "description": "Former Khaenri'ah citizens seeking revenge on Celestia",
+      "leadership": "Abyss sibling (Traveler's twin)",
+      "goal": "Overthrow Celestia, restore Khaenri'ah",
+      "forces": "Abyss Mages, Heralds, Lectors, corrupted monsters"
+    },
+    "gnoses": {
+      "description": "Divine chess pieces containing Archon power",
+      "collected_by_fatui": [
+        "Anemo (Venti) - taken by Signora",
+        "Geo (Zhongli) - traded willingly",
+        "Electro (Ei) - taken by Scaramouche, later retrieved",
+        "Dendro (Nahida) - traded for information",
+        "Hydro (Focalors) - destroyed with her divinity"
+      ],
+      "purpose": "Unknown, part of Tsaritsa's plan against Celestia"
+    },
+    "primordial_sea": {
+      "description": "Original water from which Fontaine humans were created",
+      "danger": "Dissolves Fontainians back into Oceanids",
+      "resolution": "Neuvillette used returned authority to transform all Fontainians into true humans"
+    }
+  },
+  
+  "recent_story_updates": {
+    "version_5_0_natlan_arc": {
+      "summary": "Traveler arrives in Natlan during Abyss invasion",
+      "key_events": [
+        "Introduced to six tribes and Ancient Name system",
+        "Met Mavuika, the Pyro Archon",
+        "Capitano revealed to be in Natlan with mysterious goals",
+        "Night Kingdom explored - realm of souls",
+        "Ongoing battle against Abyss forces"
+      ]
+    },
+    "version_5_1_to_5_3": {
+      "summary": "Deepening Natlan crisis and revelations",
+      "key_events": [
+        "Capitano's true nature and goals revealed",
+        "Sacred Flame's importance to Natlan",
+        "Ancient dragon lore uncovered",
+        "Traveler gaining Natlan-specific powers",
+        "Abyss invasion intensifies"
+      ]
+    }
+  },
+  
+  "sandrone_specific": {
+    "workshop_location": "Private facility in Snezhnaya",
+    "current_research": [
+      "Reverse-engineering Khaenri'ahn Ruin Guards",
+      "Developing autonomous puppet soldiers",
+      "Studying consciousness transfer to mechanical bodies",
+      "Analyzing ancient dragon technology",
+      "Improving automaton AI and decision-making"
+    ],
+    "known_creations": [
+      "Massive mechanical war machine (her transport)",
+      "Small shoulder puppet companion",
+      "Unknown number of autonomous puppets"
+    ],
+    "relationships": {
+      "dottore": "Professional respect, different research methods",
+      "scaramouche": "Views him as failed puppet, fascinated by his current state",
+      "tsaritsa": "Loyal servant, developing war machines for her cause"
+    },
+    "goals": [
+      "Create puppet that surpasses human consciousness",
+      "Unlock secrets of Khaenri'ahn technology",
+      "Develop mechanical army for Fatui",
+      "Prove mechanical superiority over organic life"
+    ]
+  },
+  
+  "technical_knowledge": {
+    "vision_system": {
+      "description": "Elemental power granted by gods (or so most believe)",
+      "truth": "Visions may be granted by Celestia's automated system, not Archons directly",
+      "ambition_requirement": "Strong desire or ambition triggers Vision bestowal"
+    },
+    "delusions": {
+      "description": "Artificial Visions created by Fatui",
+      "danger": "Drain life force from user",
+      "creation": "Fatui secret, possibly involves Gnosis power"
+    },
+    "ley_lines": {
+      "description": "Energy veins throughout Teyvat",
+      "content": "Memories, elemental energy, information",
+      "irminsul": "World Tree connected to all ley lines, stores all information"
+    }
+  }
+}

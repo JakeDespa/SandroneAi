@@ -5,9 +5,12 @@ A local AI chatbot featuring the personality of **Sandrone (The Marionette)**, t
 ## ✨ Features
 
 - 🤖 **Sandrone's Personality**: Arrogant, intelligent, and scientifically brilliant character
+- 🧠 **Persistent Memory**: Remembers facts, conversations, and learns across sessions
 - 🔒 **100% Local**: All processing happens on your machine - no data sent to external servers
 - 🚫 **Uncensored**: Uses uncensored LLM models for unrestricted conversations
 - 💬 **Web Interface**: Clean, modern chat interface
+- 📁 **File System Access**: Can read, write, and manage files
+- 🌐 **Internet Search**: Web search capabilities (when enabled)
 - 🧠 **Context-Aware**: Maintains conversation history for coherent discussions
 - ⚡ **Fast Responses**: Local inference for quick interactions
 
@@ -147,13 +150,23 @@ SandroneAi/
 
 ## 🛠️ Troubleshooting
 
+### Web Search Status
+✅ **Web search is now WORKING!** 
+
+The system uses `urllib` with SSL bypass to work around network restrictions. Wikipedia and web search are fully functional.
+
+**Optional - Local Cache System**:
+If you want to add custom information that's not on Wikipedia, use the local cache. See **[CACHE_GUIDE.md](CACHE_GUIDE.md)**.
+
+**For detailed network information**, see **[NETWORK_INFO.md](NETWORK_INFO.md)**.
+
 ### Ollama Not Connected
 - Ensure Ollama is running: `ollama serve`
 - Check if Ollama is accessible: `curl http://localhost:11434/api/tags`
 
 ### Model Not Found
 - List available models: `ollama list`
-- Pull a model: `ollama pull dolphin-mixtral`
+- Pull a model: `ollama pull nous-hermes2`
 
 ### Slow Responses
 - Use a smaller model (wizard-vicuna-uncensored)
